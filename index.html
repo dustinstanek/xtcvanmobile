@@ -21,13 +21,6 @@
       background-color: transparent; /* sets the background color of the page to transparent */
     }
 
-    /* body {
-      background-color: #181818;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
-
     #game-wrapper {
       display: flex;
       justify-content: center;
@@ -49,12 +42,10 @@
 </head>
 
 <body>
-
   <div id="game-wrapper">
-    <canvas></canvas>
-    <a href="https://extc.me/play" class="exit-btn">Exit game</a> <!-- adds a hyperlink to the button that leads to https://extc.me/play -->
+    <canvas id="game-canvas"></canvas>
+    <button class="exit-btn" id="exit-game">Exit game</button>
   </div>
-
   <script type="module" src="./lib/index.js"></script>
 </body>
 
