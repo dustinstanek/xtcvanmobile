@@ -21,16 +21,21 @@
       background-color: transparent; /* sets the background color of the page to transparent */
     }
 
-    #game-wrapper {
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    #game-wrapper {
+      position: relative;
+    }
+
     .exit-btn {
       position: absolute;
-      top: 20%;
+      top: -40px; /* Adjust this value to position the button above the game window */
       right: 50%;
+      transform: translateX(50%);
       background-color: #fff;
       color: #000;
       border: none;
